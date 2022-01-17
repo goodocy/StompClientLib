@@ -1,6 +1,4 @@
-robnadin:spm-support
-
-// swift-tools-version:5.5
+// swift-tools-version:5.4
 import PackageDescription
 
 let package = Package(
