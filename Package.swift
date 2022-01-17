@@ -4,27 +4,24 @@ robnadin:spm-support
 import PackageDescription
 
 let package = Package(
-  name: "SocketRocket",
+  name: "StompClientLib",
   platforms: [
-    .iOS(.v9),
+    .iOS(.v10),
     .macOS(.v10_10),
     .tvOS(.v9),
   ],
   products: [
     .library(
-      name: "SocketRocket",
-      targets: ["SocketRocket"]),
+      name: "StompClientLib",
+      targets: ["StompClientLib"]),
   ],
   dependencies: [
     .package(url: "https://github.com/robnadin/SocketRocket", branch: "spm-support"),
   ],
   targets: [
     .target(
-      name: "SocketRocket",
-      path: "SocketRocket",
-      cSettings: [
-        .headerSearchPath("Internal/**"),
-      ]
-    ),
+      name: "StompClientLib",
+      path: "StompClientLib/Classes",
+    )
   ]
 )
